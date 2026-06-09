@@ -20,6 +20,7 @@
         stroke-width="1.5"
         stroke="currentColor"
         class="size-6 md:hidden"
+        id="menuicon"
       >
         <path
           stroke-linecap="round"
@@ -40,6 +41,23 @@
         </li>
       </ul>
     </nav>
+    <!--Side Nav-->
+    <section id="sidenav" class="fixed z-20 top-0 bg-green-100 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+      <div class="text-right p-5">
+        <p id="close-nav" class="inline cursor-pointer">X</p>
+      </div>
+      <ul class="flex flex-col gap-10 items-center text-gray-600">
+        <li>
+          <a class="hover:underline hover:text-black" href="./index.html">Home</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="./proudct_page.html">Proudct</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-black" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </section>
     <!--Proudcts Section-->
     <section class="mt-5 text-center">
       <h1 class="font-bold text-3xl">Our Proudcts</h1>
@@ -47,8 +65,9 @@
         placeholder="Search for proudcts"
         class="border p-2 mt-2"
         style="width: 80%"
+        id="search"
       />
-      <div class="mt-5 grid grid-cols-2 md:grid-cols-4 p-5 gap-10">
+      <div id="productcontainer" class="mt-5 grid grid-cols-2 md:grid-cols-4 p-5 gap-10">
         <div>
           <img
             src="./images/bestseller_1.jpg"
@@ -91,7 +110,7 @@
             alt="rose plant"
             class="w-45 inline hover:shadow-xl hover:transform hover:-translate-y-2"
           />
-          <h1>Rose Plant</h1>
+          <h1>Money Plant</h1>
           <p>20$</p>
         </div>
         <div>
@@ -100,7 +119,7 @@
             alt="lilly plant"
             class="w-45 inline hover:shadow-xl hover:transform hover:-translate-y-2"
           />
-          <h1>Lilly Plant</h1>
+          <h1>Lotus Plant</h1>
           <p>20$</p>
         </div>
         <div>
@@ -132,5 +151,6 @@
       </p>
       <p>@2021 Greenday.com</p>
     </section>
+    <script src="./product.js"></script>
   </body>
 </html>
